@@ -11,7 +11,7 @@ export default function WelcomePage() {
             alt="Doce Renda"
             width={112}
             height={112}
-            className="rounded-full shadow-soft"
+            className=""
             priority
           />
         </div>
