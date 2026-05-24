@@ -1,12 +1,19 @@
 import Link from 'next/link';
-import { Cookie } from 'lucide-react';
+import Image from 'next/image';
 
 export default function WelcomePage() {
   return (
     <div className="min-h-screen flex flex-col bg-cream">
       <div className="container-app flex-1 flex flex-col items-center justify-center text-center py-12">
-        <div className="mb-8 flex h-28 w-28 items-center justify-center rounded-full bg-white border border-caramel shadow-soft">
-          <Cookie size={56} className="text-amber" strokeWidth={1.5} />
+        <div className="mb-8">
+          <Image
+            src="/icons/icon-512.png"
+            alt="Doce Renda"
+            width={112}
+            height={112}
+            className="rounded-full shadow-soft"
+            priority
+          />
         </div>
 
         <h1 className="text-[28px] font-medium text-espresso leading-tight max-w-[320px]">
