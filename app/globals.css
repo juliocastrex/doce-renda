@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    background: #FAEEDA;
+    color: #412402;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  body {
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .container-app {
+    @apply mx-auto w-full max-w-[480px] px-5;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center w-full bg-amber text-white text-base font-medium rounded-lg py-4 px-5 shadow-soft active:scale-[0.99] transition;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center w-full bg-white text-espresso text-base font-medium rounded-lg py-3 px-5 border border-caramel/70 active:scale-[0.99] transition;
+  }
+  .card {
+    @apply bg-white border border-caramel/60 rounded-card p-4 shadow-soft;
+  }
+  .section-title {
+    @apply text-[22px] font-medium text-espresso leading-snug;
+  }
+}
